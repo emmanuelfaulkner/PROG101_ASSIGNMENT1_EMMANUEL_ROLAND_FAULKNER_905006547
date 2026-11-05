@@ -4,10 +4,10 @@ This is Assignment 1 for programming Logic and Design About the busiest of traff
 ## PROBLEM DESCRIPTION 
 Congo Cross is one of the busiest road intersections in Freetown, connecting traffic from the city centre, the east end and the western peninsula. At peak hours vehicles queue in every direction,signals (where they work) run on fixed timings that ignore how many vehicles are actually waiting,and traffic officers must manage the junction by hand. The result is long delays, wasted fuel, higher exhaust pollution, late workers and students, and slow passage for ambulances and fire engines.
 
-### PEOPLE AFFECTED  
+## PEOPLE AFFECTED  
 office workers , commercial drivers (okada, keke, poda-poda and taxi operators),pedestrians, school children, traffic police and emergency services.
 
-#### PROPOSED SOLUTIONS  
+## PROPOSED SOLUTIONS  
 A modular traffic-control logic that repeats in cycles. In each cycle it 
 (1) Reads vehicle counts and emergency flags for North, East, South and West approaches. (2) Validates the data.
 (3) overrides normal timing if an emergency vehicle is present.
@@ -15,7 +15,7 @@ A modular traffic-control logic that repeats in cycles. In each cycle it
 (5)Activates signals in priority order
 (6)Logs the cycle for later analysis by planners.
 
-##### SDG ALIGNMENT 
+## SDG ALIGNMENT 
 The project mainly supports Sustainable Development Goal.
 SDG 11 (Sustainable Cities and Communities): safer, more efficient urban transport.This goal includes making public transportation affordable and and creating safe roads and public spaces
 SDG 9 (Industry, Innovation and Infrastructure): resilient, low-cost digital infrastructure.It focuses on improving roads, bridges, transportation, technology, and communication systems. It also encourages the use of modern technology to create jobs, support businesses, and improve people's lives.
@@ -23,7 +23,7 @@ SDG 9 (Industry, Innovation and Infrastructure): resilient, low-cost digital inf
 air pollution
 SDG 13 (Climate Action): less idling means lower emissions.
 
-##### PSEUDOCODE
+## PSEUDOCODE
 Pseudocode is a simple way of explaining the steps a system follows to solve a problem. It uses plain English and basic programming instructions without following the rules of a specific programming language. In this project, pseudocode explains how to control the traffic problem at Congo cross
 
 
@@ -91,7 +91,7 @@ END
 ## ALGORITHM 
 Constants: MIN_GREEN = 15 s, MAX_GREEN = 90 s, DEFAULT_GREEN = 30 s, WAIT_WEIGHT = 10, VEHICLE_FACTOR = 2 s per vehicle. Variables: count[1..4] (integer), emergency[1..4] (Boolean), waiting[1..4] (integer), green[1..4] (integer seconds). Approaches: 1 = North, 2 = East, 3 = South, 4 = West. 
 1. Start. Set constants and set waiting[i] = 0 for all approaches.
-2.  2. Read count[i] and emergency[i] for i = 1 to 4.
+2. Read count[i] and emergency[i] for i = 1 to 
 3. Validate: if any count is negative or missing, run the DEFAULT plan (DEFAULT_GREEN for each approach), log a sensor fault, go to step 11.
 4. If any emergency[i] is TRUE, give that approach green, set all others red, hold until emergency[i] becomes FALSE, log it, go to step 11.
 5. For each approach i, calculate green[i] = MIN_GREEN + VEHICLE_FACTOR x count[i]; cap at MAX_GREEN; if count[i] = 0 use MIN_GREEN.
