@@ -1,5 +1,5 @@
 # PROG101_ASSIGNMENT1_EMMANUEL_ROLAND_FAULKNER_905006547
-This is Assignment one for programming Logic and Design About the busiest of traffic in the Congo cross road 
+This is Assignment 1 for programming Logic and Design About the busiest of traffic in the Congo cross road 
 
 ## PROBLEM DESCRIPTION 
 Congo Cross is one of the busiest road intersections in Freetown, connecting traffic from the city centre, the east end and the western peninsula. At peak hours vehicles queue in every direction,signals (where they work) run on fixed timings that ignore how many vehicles are actually waiting,and traffic officers must manage the junction by hand. The result is long delays, wasted fuel, higher exhaust pollution, late workers and students, and slow passage for ambulances and fire engines.
